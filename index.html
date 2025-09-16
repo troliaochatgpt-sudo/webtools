@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This page includes content assisted by AI tools.">
+    <meta name="description" content="Personal training site with semantic HTML and working navigation. This page includes content assisted by AI tools.">
     <title>Duy Nguyen - Launch Studio Training Site</title>
 </head>
 <body>
     <header>
-        <nav aria-label="primary">
+        <section>
+            <h1>Duy Nguyen - Welcome to my homepage</h1>
+            <p> This site documents my learning journey in web development. Use the list below to explore each section.</p>
+        </section>
+        <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#identity">Developer Identity</a></li>
-                <li><a href="#journey">Learning Journey</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+       <nav aria-label="Primary site navigation">
+           <ul>
+               <li><a href="#about">About Me</a></li>
+               <li><a href="#identity">Developer Identity</a></li>
+               <li><a href="#journey">Learning Journey</a></li>
+           </ul>
+       </nav>
+        
         <figure>
             <img src="images/avatar.jpg" alt="Portrait of me with my dog" width="200" height="200">
             <figcaption>My personal photo with my dog - future web developer</figcaption>
@@ -44,9 +56,13 @@
     </main>
 
     <footer>
-        <p>
-            &copy; <time datetime="2025">2025</time> Duy Nguyen - last updated on <time datetime="2025-09-08">September 08, 2025</time>
-        </p>
+        <p>&copy; <time datetime="2025">2025</time> Duy Nguyen</p>
+        <ul>
+            <li><a href="https://www.dallascollege.edu/pages/default.aspx">Dallas College</a></li>
+            <li><a href="mailto:troliaochatgpt@gmail.com">Email Me</a></li>
+            <li><a href="README.md">Content Notes</a></li>
+        </ul>
+        <p>Last updated on <time datetime="2025-09-16">September 16, 2025</time></p>
     </footer>
 </body>
 </html>

@@ -138,3 +138,15 @@ figcaption { font-size: 0.9rem; color: #4b5563; } /* soft gray */
 .lead  { font-size: 1.125rem; line-height: 1.7; }
 .muted { color: #4b5563; }  /* soft gray */
 .note  { font-style: italic; }
+
+/* HEADER (#1f2937)*/
+header a:link,
+header a:visited { color:#f97316; text-decoration: underline; }
+header a:hover,
+header a:focus  { color:#fb923c; }
+
+/* FOOTER (#0f172a)*/
+footer a:link,
+footer a:visited { color:#b91c1c; }
+footer a:hover,
+footer a:focus  { color:#ef4444; }

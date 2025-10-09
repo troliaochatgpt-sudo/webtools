@@ -21,5 +21,19 @@ Some content in this project was supported by ChatGPT to help brainstorm ideas, 
 
 > `<meta name="description" content="This page includes content assisted by AI tools.">` has been included in the `<head>` section of the HTML file.
 
+## Overview
+This project enhances my homepage by adding optimized and meaningful images, along with a favicon for identity and branding.  
+Each image includes both a small (300px) and a large (1000px) version. Clicking a smaller image opens the larger version in a new browser tab.
+
+## Features Implemented
+- Three meaningful section images (About Me, Developer Identity, Learning Journey)
+- Each image uses a **small (300px)** and **large (1000px)** version
+- Clicking a small image opens the large version in a **new tab**
+- Images sized and aligned using **CSS flexbox**
+- Descriptive **alt text** and captions for accessibility
+- Favicon created and linked across all pages
+- HTML and CSS validated through **W3C Validator**
+- Accessibility checked using **WAVE tool**
+
 ## GitHub Pages (Live Site)
 (https://troliaochatgpt-sudo.github.io/webtools/)

@@ -126,13 +126,6 @@ a:focus-visible {
 }
 
 /* -------------
-   Media
-   ------------- */
-img { max-width: 100%; height: auto; display: block; }
-figure { margin: 1rem 0; }
-figcaption { font-size: 0.9rem; color: #4b5563; } /* soft gray */
-
-/* -------------
    Optional helpers (use sparingly)
    ------------- */
 .lead  { font-size: 1.125rem; line-height: 1.7; }
@@ -150,3 +143,28 @@ footer a:link,
 footer a:visited { color:#b91c1c; }
 footer a:hover,
 footer a:focus  { color:#ef4444; }
+
+/* -------- Centered Section Images -------- */
+.centered-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 100%;
+}
+
+.centered-media img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Caption */
+.caption-left {
+  align-self: flex-start;
+  font-size: 0.9rem;
+  color: #444;
+  opacity: 0.85;
+  margin-left: 0.25rem;
+}

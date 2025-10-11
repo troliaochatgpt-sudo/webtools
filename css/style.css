@@ -140,9 +140,9 @@ header a:focus  { color:#fb923c; }
 
 /* FOOTER (#0f172a)*/
 footer a:link,
-footer a:visited { color:#b91c1c; }
+footer a:visited { color:#f97316; }
 footer a:hover,
-footer a:focus  { color:#ef4444; }
+footer a:focus  { color:#f97316; }
 
 /* -------- Centered Section Images -------- */
 .centered-media {

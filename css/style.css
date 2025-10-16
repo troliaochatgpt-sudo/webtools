@@ -139,3 +139,19 @@ footer a:focus  { color:#f5a666; }
   opacity: 0.85;
   margin-left: 0.25rem;
 }
+/* Top nav links: force same orange as footer */
+.site-nav .site-nav__link:link,
+.site-nav .site-nav__link:visited {
+  color: #f97316;           /* orange */
+  text-decoration: none;
+}
+.site-nav .site-nav__link:hover,
+.site-nav .site-nav__link:focus {
+  color: #f5a666;           /* lighter orange */
+  text-decoration: underline;
+}
+/* TOC links (optional): keep default or make orange too */
+.toc a:link,
+.toc a:visited { color: #f97316; }
+.toc a:hover,
+.toc a:focus  { color: #f5a666; }

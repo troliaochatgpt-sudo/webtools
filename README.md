@@ -6,6 +6,8 @@ This is my personal homepage project created for the Launch Studio training site
 - `index.html`: Main HTML file structured using semantic HTML5
 - `images/avatar.jpg`: My personal photo (used in the homepage)
 - `README.md`: This file
+- `About-us`
+- `Contact-us`
 
 ## Page Sections
 The homepage includes the following three narrative sections:

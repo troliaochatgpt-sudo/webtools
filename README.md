@@ -35,6 +35,5 @@ Each image includes both a small (300px) and a large (1000px) version. Clicking 
 - HTML and CSS validated through **W3C Validator**
 - Accessibility checked using **WAVE tool**
 
-
 ## GitHub Pages (Live Site)
 (https://troliaochatgpt-sudo.github.io/webtools/)

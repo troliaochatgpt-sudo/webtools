@@ -1,0 +1,139 @@
+/* -------- Layout tokens -------- */
+:root {
+  --container-max: 1100px;
+  --gutter: 16px;
+  --nav-h: 56px;
+  --toc-w: 260px;
+}
+
+/* Nav fixed */
+.page { padding-top: var(--nav-h); }
+
+/* Skip link (a11y) */
+.skip-link {
+  position: absolute; left: -9999px; top: auto;
+  width: 1px; height: 1px; overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed; left: 16px; top: 8px; z-index: 2000;
+  width: auto; height: auto; padding: 8px 12px; background: #fff; border: 1px solid #ccc;
+}
+
+/* Header & logo */
+.page-header { position: relative; min-height: 140px; z-index: 500; }
+.page-header__brand { max-width: var(--container-max); margin: 0 auto; padding: 16px; }
+
+.logo {
+  position: absolute;
+  top: calc(var(--nav-h));
+  left: 80px;
+  height: 72px; width: auto; object-fit: contain;
+  z-index: 1200; 
+}
+
+/* Fixed top navigation */
+.site-nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  display: grid;
+  place-items: center; background: var(--header-bg);
+  z-index: 1000;
+}
+.site-nav__list { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+
+
+/* Main layout */
+.layout { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--gutter); }
+.flow::after { content: ""; display: table; clear: both; }
+
+/* TOC: float right + sticky */
+.toc {
+  float: right;
+  width: var(--toc-w);
+  margin: 0 20px 16px 16px;
+  position: sticky;
+  top: calc(var(--nav-h) + 16px);
+}
+.toc__title { margin: 0 0 8px 0; }
+.toc__list { margin: 0; padding-left: 18px; }
+
+/* Content column TOC */
+.content {
+  margin-right: calc(var(--toc-w) + 60px);
+  display: flow-root;         
+}
+
+/* Sections */
+.section { margin: 32px 0; }
+.section__title { margin-top: 0; }
+
+/* Make section paragraphs justified */
+.content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Figures & images */
+.figure.float-right {
+  width: 320px;         
+}
+.figure__img {
+  width: 100%;           
+  height: auto;
+}
+.float-right {            
+  float: right;
+  margin: 0 0 10px 24px;
+}
+#identity .figure.float-right {
+  margin-top: 40px; 
+}
+
+#journey .figure.float-right {
+  margin-top: 50px; 
+}
+
+/* Center all image captions */
+.figure__cap,
+figcaption {
+  text-align: center;    /* Centered caption */
+  display: block;
+  margin-top: 6px;
+  font-size: 0.92rem;
+  color: #444;
+  opacity: 0.85;
+}
+
+/* Centered media (About) */
+.centered-media { text-align: center; margin: 0 auto 1.25rem; }
+.centered-media .figure__img,
+.centered-media img { display: inline-block; max-width: 100%; height: auto; }
+
+/* Align right-side images in Identity and Journey sections */
+.same-line {
+  float: right;
+  margin: 0 0 10px 24px;  /* same spacing for both */
+  clear: right;           /* ensure they line up vertically */
+  width: 320px;       /* keep consistent width */
+}
+
+/* Optional fine-tuning if small vertical offset appears */
+#identity .same-line { margin-top: 8px; } /* adjust up/down as needed */
+
+/* Anchor offset so headings aren't hidden by fixed nav */
+.anchor { scroll-margin-top: calc(var(--nav-h) + 10px); }
+
+/* Footer layout */
+.page-footer { max-width: var(--container-max); margin: 40px auto 24px; padding: 0 var(--gutter); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .toc { float: none; position: static; width: auto; margin: 0 0 16px 0; }
+  .content { margin-right: 0; }
+}
+@media (max-width: 640px) {
+  .logo { height: 56px; }
+  .figure__img { max-width: 100%; }
+  .float-right { float: none; margin: 0 0 10px 0; }
+  .centered-media { text-align: center; }
+}

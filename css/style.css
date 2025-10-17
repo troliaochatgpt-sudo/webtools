@@ -152,6 +152,6 @@ footer a:focus  { color:#f5a666; }
 }
 /* TOC links (optional): keep default or make orange too */
 .toc a:link,
-.toc a:visited { color: #f97316; }
+.toc a:visited { color: #AD0028; }
 .toc a:hover,
-.toc a:focus  { color: #f5a666; }
+.toc a:focus  { color: #ff5e5e; }

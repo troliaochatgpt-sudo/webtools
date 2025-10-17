@@ -4,6 +4,7 @@
   --gutter: 16px;
   --nav-h: 56px;
   --toc-w: 260px;
+  --toc-top: 40px;
 }
 
 /* Nav fixed */
@@ -48,11 +49,16 @@
 
 /* TOC: float right + sticky */
 .toc {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   float: right;
   width: var(--toc-w);
-  margin: 0 20px 16px 16px;
+  margin: 20px 16px 16px;
   position: sticky;
-  top: calc(var(--nav-h) + 16px);
+  top: calc(var(--nav-h) + var(--toc-top));
 }
 .toc__title { margin: 0 0 8px 0; }
 .toc__list { margin: 0; padding-left: 18px; }
@@ -69,8 +75,7 @@
 
 /* Make section paragraphs justified */
 .content p {
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
 }
 
 /* Figures & images */

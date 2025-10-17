@@ -150,7 +150,7 @@ footer a:focus  { color:#f5a666; }
   color: #f5a666;           /* lighter orange */
   text-decoration: underline;
 }
-/* TOC links (optional): keep default or make orange too */
+/* TOC links */
 .toc a:link,
 .toc a:visited { color: #AD0028; }
 .toc a:hover,

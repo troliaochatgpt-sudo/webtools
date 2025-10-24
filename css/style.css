@@ -287,3 +287,25 @@ form textarea {
   font-size: 1rem;
   margin-bottom: 12px;
 }
+
+/* ---------- Success page ---------- */
+.success-page .back-home {
+  color: #920f2e;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.success-page .back-home:hover {
+  color: #ff5e5e;
+  text-decoration: underline;
+}
+.success-page section {
+  max-width: 600px;
+  margin: 4rem auto 5rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

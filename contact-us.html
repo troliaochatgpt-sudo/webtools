@@ -3,32 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Duy Nguyen">
+  <meta name="description" content="This page includes content assisted by AI tools.">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Contact Us — Duy Nguyen</title>
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>Contact Us</h1>
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="index.html" class="site-nav__link">Home</a></li>
+        <li><a href="about-us.html" class="site-nav__link">About Us</a></li>
+        <li><a href="contact-us.html" aria-current="page" class="site-nav__link">Contact Us</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav aria-label="Primary site navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about-us.html">About Us</a></li>
-      <li><a href="contact-us.html" aria-current="page">Contact Us</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <h2>Get in Touch</h2>
-    <p>If you have questions about my coursework or projects, feel free to reach out via email. I am happy to connect and learn from others.</p>
+    <section class="intro section">
+      <h2>Let's Start a Conversation</h2>
+      <p>If you have questions about my coursework or projects, feel free to reach out via email. I am happy to connect and learn from others.</p>
+    </section>
+
+    <section class="section" aria-labelledby="contact-heading">
+      <h4 id="contact-heading">Ask how can I help you:</h4>
+
+      <form class="form-card form-grid"
+            name="contact"
+            method="get"
+            action="success.html">
+
+        <div>
+          <label class="required" for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required placeholder="Enter your name">
+        </div>
+
+        <div>
+          <label class="required" for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+        </div>
+
+        <div>
+          <label for="number">Phone Number (optional)</label>
+          <input type="tel" id="number" name="number" autocomplete="tel" placeholder="(xxx) xxx-xxxx">
+        </div>
+
+        <div>
+          <label class="required" for="program">Program</label>
+          <select id="program" name="program" required>
+            <option value="" disabled selected>— Select Program —</option>
+            <option>Web Development</option>
+            <option>Programming</option>
+            <option>PC Support</option>
+            <option>Network Administration</option>
+            <option>Cybersecurity</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend class="required">Message Type</legend>
+          <div class="message-type" role="group" aria-label="Message Type">
+            <label><input type="radio" name="reason" value="question" required> Question</label>
+            <label><input type="radio" name="reason" value="comment" required> Comment</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences (optional)</legend>
+          <div class="control-row">
+            <label><input type="checkbox" name="contact_me" value="yes"> Contact me by email</label>
+            <label><input type="checkbox" name="subscribe" value="yes"> Contact me by phone</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label class="required" for="message">Your message</label>
+          <textarea id="message" name="message" required placeholder="Enter your message here"></textarea>
+        </div>
+
+        <div class="actions">
+          <input type="submit" name="submit" value="Send Mail">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+    </section>
+
+    <section class="section" aria-labelledby="table-heading">
+      <h2 id="table-heading">Class Schedule</h2>
+      <table>
+        <caption>Upcoming Study Sessions</caption>
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Instructor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Oct 25</td><td>HTML Forms</td><td>Duy Nguyen</td></tr>
+          <tr><td>Oct 27</td><td>Tables Practice</td><td>Karen Nguyen</td></tr>
+          <tr><td>Oct 30</td><td>CSS Styling</td><td>Bao Nguyen</td></tr>
+          <tr><td>Nov 1</td><td>Validation Check</td><td>Oanh Nguyen</td></tr>
+        </tbody>
+      </table>
+    </section>
   </main>
 
   <footer>
+    <p>&copy; <time datetime="2025">2025</time> Duy Nguyen</p>   
     <ul>
       <li><a href="https://www.dallascollege.edu">Dallas College</a></li>
       <li><a href="mailto:DNguyen94@Student.DallasCollege.edu">Webmaster</a></li>
       <li><a href="https://chatgpt.com/">Attribution</a></li>
     </ul>
+    <p>Last updated on <time datetime="2025-10-23">October 23, 2025</time></p>
   </footer>
 </body>
 </html>

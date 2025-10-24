@@ -47,7 +47,7 @@
 .layout { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--gutter); }
 .flow::after { content: ""; display: table; clear: both; }
 
-/* TOC: float right + sticky */
+/* TOC */
 .toc {
   background-color: #f9fafb;
   border: 1px solid #e5e7eb;

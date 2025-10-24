@@ -155,3 +155,135 @@ footer a:focus  { color:#f5a666; }
 .toc a:visited { color: #AD0028; }
 .toc a:hover,
 .toc a:focus  { color: #ff5e5e; }
+
+/* ---------- Contact us ---------- */
+/* ---------- Page layout ---------- */
+.intro{
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 0.5rem auto;
+}
+/* ---------- Form buttons ---------- */
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;        
+  margin-top: 8px;
+}
+
+.actions input[type="submit"],
+.actions input[type="reset"] {
+  padding: 8px 16px;
+  width: auto;              
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+  height: 40px;
+}
+.actions input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+.actions input[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+.actions input[type="reset"] {
+  background-color: #e5e7eb;
+  color: #111;
+  margin-left: 8px;
+}
+.actions input[type="reset"]:hover {
+  background-color: #d1d5db;
+  transform: translateY(-1px);
+}
+
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+th, td {
+  border: 1px solid #1b0202;
+  padding: 8px;
+  transition: background-color 0.25s ease;
+}
+
+thead th {
+  background-color: #f9b58b;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #807e7e2f;
+}
+
+thead tr:hover th,
+tbody tr:hover td {
+  background-color: rgba(60, 60, 60, 0.242);
+  color: #000;
+  cursor: pointer;
+}
+.table-card,
+table {
+  margin-bottom: 40px;
+}
+/* ---------- Form controls (checkbox & radio) ---------- */
+.message-type label,
+.control-row label {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 8px;         
+  margin-bottom: 6px;      
+  width: 220px;              
+  font-size: 1rem;
+}
+
+/* Radio & checkbox */
+.message-type input[type="radio"],
+.control-row input[type="checkbox"] {
+  order: 2;
+  margin-left: auto;
+  margin-right: 0;
+  transform: scale(1.1);
+}
+
+/* ---------- Form layout ---------- */
+form label {
+  display: block;
+  margin-bottom: 4px; 
+  font-weight: 600; 
+}
+
+label[for="message"],
+#message {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form select,
+form textarea {
+  display: block;
+  width: 100%; 
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}

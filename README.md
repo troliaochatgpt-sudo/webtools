@@ -6,8 +6,9 @@ This is my personal homepage project created for the Launch Studio training site
 - `index.html`: Main HTML file structured using semantic HTML5
 - `images/avatar.jpg`: My personal photo (used in the homepage)
 - `README.md`: This file
-- `About-us`
-- `Contact-us`
+- `About-us.html`
+- `Contact-us.html`
+- `success.html`
 
 ## Page Sections
 The homepage includes the following three narrative sections:
@@ -36,6 +37,18 @@ Each image includes both a small (300px) and a large (1000px) version. Clicking 
 - Favicon created and linked across all pages
 - HTML and CSS validated through **W3C Validator**
 - Accessibility checked using **WAVE tool**
+
+# Contact Us Page — Duy Nguyen
+
+This project was created for the Launch Studio “HTML Forms and Tables” assignment.  
+It includes a professional **Contact Us** form and a **semantic data table**, both styled with CSS for clarity and accessibility.
+
+## Features
+- Accessible HTML5 form using `<fieldset>`, `<legend>`, and labeled inputs  
+- Includes text, email, select menu, radio buttons, and checkboxes  
+- Table built with `<caption>`, `<thead>`, `<tbody>`, and proper `<th scope="col">` tags  
+- Fully validated with W3C HTML and CSS Validators  
+- Responsive layout styled in `css/style.css`
 
 ## GitHub Pages (Live Site)
 (https://troliaochatgpt-sudo.github.io/webtools/)

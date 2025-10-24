@@ -185,11 +185,11 @@ footer a:focus  { color:#f5a666; }
   height: 40px;
 }
 .actions input[type="submit"] {
-  background-color: #007bff;
+  background-color: #0056B3;
   color: #fff;
 }
 .actions input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #146fd0;
   transform: translateY(-1px);
 }
 

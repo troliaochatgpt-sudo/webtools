@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Duy Nguyen">
+  <meta name="description" content="This page includes content assisted by AI tools.">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/team.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <title>Team — Launch Studio Training Site</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="page">
+    <header class="page-header">
+      <img src="images/logo.png" alt="Site logo" class="logo">
+      <section class="page-header__brand">
+        <h1>Meet Our Team</h1>
+        <p>This page presents our team using a clear, responsive Flexbox layout that aligns with the rest of the site.</p>
+      </section>
+    </header>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="index.html" class="site-nav__link">Home</a></li>
+        <li><a href="about-us.html" class="site-nav__link">About us</a></li>
+        <li><a href="contact-us.html" class="site-nav__link">Contact us</a></li>
+        <li><a href="team.html" aria-current="page" class="site-nav__link is-active">Team</a></li>
+      </ul>
+      <a class="nav-signin" href="#" role="button">Sign In</a>
+    </nav>
+
+    <main id="main-content" class="layout flow">
+      <!-- Intro -->
+      <section class="section intro">
+        <h2 class="section__title">Design Presentation</h2>
+        <p class="lead">
+          We use CSS Flexbox to organize member cards, maintain balanced spacing, and ensure accessibility across devices.
+          The layout is semantic, readable, and ready for client-facing review.
+        </p>
+      </section>
+
+      <!-- Team grid -->
+      <section class="section team" aria-label="Team members">
+        <!-- Card 1 -->
+        <div class="team-card">
+          <h3 class="team-card__role">Design Lead</h3>
+          <figure class="team-card__media">
+            <img src="images/member-1.jpg" alt="Wendy Tran — Design Lead portrait" width="400" height="400" loading="lazy" decoding="async">
+            <figcaption class="team-card__name">Wendy Tran</figcaption>
+          </figure>
+          <p class="team-card__bio">
+            Wendy focuses on typography, spacing, and accessible color systems—turning early sketches into polished, inclusive experiences.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="team-card">
+          <h3 class="team-card__role">Front-End Engineer</h3>
+          <figure class="team-card__media">
+            <img src="images/member-2.jpg" alt="Emma Reyes — Front-End Engineer portrait" width="400" height="400" loading="lazy" decoding="async">
+            <figcaption class="team-card__name">Emma Reyes</figcaption>
+          </figure>
+          <p class="team-card__bio">
+            Emma builds responsive UI with semantic HTML and modular CSS—bridging design intentions with production-ready code.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="team-card">
+          <h3 class="team-card__role">Product Strategist</h3>
+          <figure class="team-card__media">
+            <img src="images/member-3.jpg" alt="Sang Min-Lee — Product Strategist portrait" width="400" height="400" loading="lazy" decoding="async">
+            <figcaption class="team-card__name">Sang Min-Lee</figcaption>
+          </figure>
+          <p class="team-card__bio">
+            Sang aligns user goals with business outcomes—clarifying scope and success metrics to ship the right work at the right time.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer site-footer">
+      <div class="footer-grid">
+        <!-- Left column -->
+        <nav class="footer-col" aria-label="Resources">
+          <h4 class="footer-title">Resources</h4>
+          <ul>
+            <li><a href="https://www.dallascollege.edu/">Dallas College</a></li>
+            <li><a href="https://chatgpt.com/">ChatGPT</a></li>
+            <li><a href="https://www.microsoft.com/ai">Microsoft AI</a></li>
+          </ul>
+        </nav>
+
+        <!-- Center column -->
+        <div class="footer-col footer-center">
+          <p>&copy; <time datetime="2025">2025</time> Duy Nguyen</p>
+          <p><a href="mailto:DNguyen94@Student.DallasCollege.edu">Email Webmaster</a></p>
+        </div>
+
+        <!-- Right column -->
+        <nav class="footer-col" aria-label="Site">
+          <h4 class="footer-title">Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a aria-current="page" href="team.html">Team</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p>Last updated on <time datetime="2025-10-28">October 28, 2025</time></p>
+    </footer>
+  </div>
+</body>
+</html>

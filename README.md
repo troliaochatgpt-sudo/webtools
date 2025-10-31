@@ -9,6 +9,7 @@ This is my personal homepage project created for the Launch Studio training site
 - `About-us.html`
 - `Contact-us.html`
 - `success.html`
+- `team.html`
 
 ## Page Sections
 The homepage includes the following three narrative sections:

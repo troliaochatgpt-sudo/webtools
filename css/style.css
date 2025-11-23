@@ -309,21 +309,24 @@ form textarea {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.nav-signin {
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-  text-decoration: none !important;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: #2563eb;
-  color: #fff !important;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: background-color 0.25s ease, transform 0.15s ease;
+/* Override W3.CSS font so it uses my site font */
+html, body {
+  font-family: var(--font-sans) !important;
 }
-.nav-signin:hover {
-  background-color: #1e40af;
-  transform: translateY(calc(-50% - 1px));
+
+.w3-container,
+.w3-card,
+.w3-input,
+.w3-button,
+.w3-bar,
+.w3-ul,
+.w3-table,
+.w3-theme,
+.w3-theme-d3 {
+  font-family: inherit !important;
+}
+@media (max-width: 640px) {
+  body {
+    padding: 1rem 0.75rem;
+  }
 }

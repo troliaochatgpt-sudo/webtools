@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Duy Nguyen">
   <meta name="description" content="This page includes content assisted by AI tools.">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/team.css">
@@ -12,19 +14,19 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <title>Team — Launch Studio Training Site</title>
 </head>
-<body>
+<body class="w3-theme-l5">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <div class="page">
-    <header class="page-header">
+  <div class="page w3-theme-l5">
+    <header class="page-header w3-container w3-center w3-padding-32" aria-label="Site header">
       <img src="images/logo.png" alt="Site logo" class="logo">
       <section class="page-header__brand">
-        <h1>Meet Our Team</h1>
+        <h1 style="font-weight:bolder" class="w3-text-white">Meet Our Team</h1>
         <p>This page presents our team using a clear, responsive Flexbox layout that aligns with the rest of the site.</p>
       </section>
     </header>
 
-    <nav class="site-nav" aria-label="Primary">
+    <nav class="site-nav w3-bar w3-theme-blue-grey" aria-label="Primary">
       <ul class="site-nav__list">
         <li><a href="index.html" class="site-nav__link">Home</a></li>
         <li><a href="about-us.html" class="site-nav__link">About us</a></li>
@@ -38,7 +40,7 @@
     <main id="main-content" class="layout flow">
       <!-- Intro -->
       <section class="section intro">
-        <h2 class="section__title">Design Presentation</h2>
+        <h2 class="section__title" style="font-weight:bolder">Design Presentation</h2>
         <p class="lead">
           We use CSS Flexbox to organize member cards, maintain balanced spacing, and ensure accessibility across devices.
           The layout is semantic, readable, and ready for client-facing review.
@@ -46,7 +48,7 @@
       </section>
 
       <!-- Team grid -->
-      <section class="section team" aria-label="Team members">
+      <section class="section team w3-container w3-padding-16" aria-label="Team members">
         <!-- Card 1 -->
         <div class="team-card">
           <h3 class="team-card__role">Design Lead</h3>
@@ -60,7 +62,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="team-card">
+        <div class="team-card ">
           <h3 class="team-card__role">Front-End Engineer</h3>
           <figure class="team-card__media">
             <img src="images/member-2.jpg" alt="Emma Reyes — Front-End Engineer portrait" width="400" height="400" loading="lazy" decoding="async">
@@ -86,7 +88,7 @@
     </main>
 
     <footer class="page-footer site-footer">
-      <div class="footer-grid">
+      <div class="footer-grid w3-padding-16">
         <!-- Left column -->
         <nav class="footer-col" aria-label="Resources">
           <h4 class="footer-title">Resources</h4>
@@ -108,9 +110,9 @@
           <h4 class="footer-title">Site</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a aria-current="page" href="team.html">Team</a></li>
-            <li><a href="contact-us.html">Contact us</a></li>
             <li><a href="about-us.html">About us</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+            <li><a aria-current="page" href="team.html">Team</a></li>
             <li><a href="products.html">Products</a></li>
           </ul>
         </nav>

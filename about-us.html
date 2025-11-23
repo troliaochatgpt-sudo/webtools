@@ -1,34 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us — Duy Nguyen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Duy Nguyen">
+  <meta name="description" content="About page for Duy Nguyen—Launch Studio Training Site">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/team.css">
+  <link rel="icon" href="images/favicon.ico">
+  <title>About Us — Launch Studio</title>
 </head>
-<body>
-  <header>
-    <h1>About Us</h1>
-  </header>
 
-  <nav aria-label="Primary site navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about-us.html" aria-current="page">About Us</a></li>
-      <li><a href="contact-us.html">Contact Us</a></li>
-    </ul>
-  </nav>
+<body class="w3-theme-l5">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <main>
-    <h2>About Launch Studio</h2>
-    <p>This site documents my learning journey in web development using semantic HTML and good project structure</p>
-  </main>
+  <div class="page w3-theme-l5">
 
-  <footer>
-    <ul>
-      <li><a href="https://www.dallascollege.edu">Dallas College</a></li>
-      <li><a href="mailto:DNguyen94@Student.DallasCollege.edu">Webmaster</a></li>
-      <li><a href="https://chatgpt.com/">Attribution</a></li>
-    </ul>
-  </footer>
+    <!-- Header -->
+    <header class="page-header w3-container w3-center w3-padding-32">
+      <img src="images/logo.png" alt="Site logo" class="logo">
+      <section class="page-header__brand">
+        <h1 class="w3-text-white" style="font-weight:bolder;">About Us</h1>
+        <p>Learn more about who I am and the purpose behind this site.</p>
+      </section>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="site-nav w3-bar w3-theme-blue-grey" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="index.html" class="site-nav__link">Home</a></li>
+        <li><a href="about-us.html" aria-current="page" class="site-nav__link">About us</a></li>
+        <li><a href="contact-us.html" class="site-nav__link">Contact us</a></li>
+        <li><a href="team.html" class="site-nav__link">Team</a></li>
+        <li><a href="products.html" class="site-nav__link">Products</a></li>
+      </ul>
+      <a class="nav-signin" href="#" role="button">Sign In</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="layout flow">
+
+      <!-- Section 1: Purpose -->
+      <section class="section w3-card w3-white w3-padding w3-margin-bottom">
+        <h2 style="font-weight:bolder">Our Purpose</h2>
+        <p>
+          This website is part of my Launch Studio Web Development training.
+          It serves as a central place where I practice building accessible,
+          responsive, and well-structured pages using HTML, CSS, W3.CSS, and Flexbox.
+        </p>
+        <p>
+          Every page here reflects something I’ve learned — navigation, layout, forms,
+          images, tables, and overall page organization.
+        </p>
+      </section>
+
+      <!-- Section 2: About Me -->
+      <section class="section w3-card w3-white w3-padding w3-margin-bottom">
+        <h2 style="font-weight:bolder">Who I Am</h2>
+
+
+        <figure class="centered-media">
+          <img src="images/avatar-300.jpg" alt="Duy Nguyen portrait" class="w3-image w3-round-large w3-card"
+            style="max-width:180px;">
+          <figcaption class="figure__cap">Duy Nguyen — CIT Student</figcaption>
+        </figure>
+
+        <p>
+          My name is Duy Nguyen, and I am currently studying Computer Information Technology,
+          focusing on front-end web development.
+          I enjoy learning step by step, improving my code quality, and building projects
+          that help me understand how real websites work.
+        </p>
+
+        <p>
+          Outside of class, I like exploring new technologies, practicing coding,
+          and spending time with my dog and my family.
+        </p>
+      </section>
+
+      <!-- Section 3: What This Site Includes -->
+      <section class="section w3-card w3-white w3-padding">
+        <h2 style="font-weight:bolder">What You will Find Here</h2>
+
+        <ul class="w3-ul w3-border">
+          <li>• A personal homepage with meaningful content</li>
+          <li>• A fully responsive Team page using Flexbox</li>
+          <li>• A Contact form with semantic structure</li>
+          <li>• A Products page showcasing layout skills</li>
+          <li>• Clean navigation and accessible page design</li>
+        </ul>
+
+        <p style="margin-top:10px;">
+          All pages are built with consistency in mind — typography, spacing, colors,
+          and layout are unified across the entire site.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer site-footer">
+      <div class="footer-grid">
+        <!-- Left -->
+        <nav class="footer-col">
+          <h4 class="footer-title">Resources</h4>
+          <ul>
+            <li><a href="https://www.dallascollege.edu/">Dallas College</a></li>
+            <li><a href="https://chatgpt.com/">ChatGPT</a></li>
+            <li><a href="https://www.microsoft.com/ai">Microsoft AI</a></li>
+          </ul>
+        </nav>
+
+        <!-- Center -->
+        <div class="footer-col footer-center">
+          <p>&copy; <time datetime="2025">2025</time> Duy Nguyen</p>
+          <p><a href="mailto:DNguyen94@Student.DallasCollege.edu">Email Webmaster</a></p>
+        </div>
+
+        <!-- Right -->
+        <nav class="footer-col">
+          <h4 class="footer-title">Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a aria-current="page" href="about-us.html">About us</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p>Last updated on <time datetime="2025-11-22">November 22, 2025</time></p>
+    </footer>
+
+  </div>
 </body>
+
 </html>

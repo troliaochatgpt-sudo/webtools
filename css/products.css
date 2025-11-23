@@ -116,42 +116,6 @@
   justify-content: center;
 }
 
-/* Ensure nav and sign-in button match Team page design */
-.site-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 12px 0;
-  background: var(--header-bg, #111827);
-  color: var(--header-fg, #fff);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.nav-signin {
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-  text-decoration: none !important;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: #2563eb;
-  color: #fff !important;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: background-color 0.25s ease, transform 0.15s ease;
-}
-.nav-signin:hover {
-  background-color: #1e40af;
-  transform: translateY(calc(-50% - 1px));
-}
-
 /* ---------- Responsive ---------- */
 @media (max-width: 1000px){
   .products-grid{
@@ -167,12 +131,4 @@
 @media (max-width: 640px){
   .products-grid{ grid-template-columns: 1fr; }
   .featured{ grid-template-columns: 1fr; }
-}
-
-/* ---------- A11y: skip-link (if not already in global) ---------- */
-.skip-link{
-  position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
-}
-.skip-link:focus{
-  position: fixed; left: 12px; top: 12px; padding: 8px 12px; background: #fff; border: 2px solid #111; z-index: 1000;
 }

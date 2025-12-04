@@ -6,10 +6,11 @@ This is my personal homepage project created for the Launch Studio training site
 - `index.html`: Main HTML file structured using semantic HTML5
 - `images/avatar.jpg`: My personal photo (used in the homepage)
 - `README.md`: This file
-- `About-us.html`
-- `Contact-us.html`
+- `about-us.html`
+- `contact-us.html`
 - `success.html`
 - `team.html`
+- `products.html`
 
 ## Page Sections
 The homepage includes the following three narrative sections:
@@ -50,6 +51,8 @@ It includes a professional **Contact Us** form and a **semantic data table**, bo
 - Table built with `<caption>`, `<thead>`, `<tbody>`, and proper `<th scope="col">` tags  
 - Fully validated with W3C HTML and CSS Validators  
 - Responsive layout styled in `css/style.css`
+
+# 
 
 ## GitHub Pages (Live Site)
 (https://troliaochatgpt-sudo.github.io/webtools/)

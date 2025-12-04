@@ -1,58 +1,116 @@
-# Personal Homepage – Launch Studio Project
+🌐 Launch Studio – Personal Website (Final Project)
 
-This is my personal homepage project created for the Launch Studio training site. The page introduces who I am, my developer identity, and my learning journey.
+This is my final multisite project for the Launch Studio Web Tools course. The project showcases my skills in semantic HTML, CSS, W3.CSS integration, layout design, accessibility, and GitHub Pages deployment.
 
-## Files Included
-- `index.html`: Main HTML file structured using semantic HTML5
-- `images/avatar.jpg`: My personal photo (used in the homepage)
-- `README.md`: This file
-- `about-us.html`
-- `contact-us.html`
-- `success.html`
-- `team.html`
-- `products.html`
+-----------------------------
 
-## Page Sections
-The homepage includes the following three narrative sections:
+📁 Project Structure
 
-- **About Me**: My background, interests, and early exposure to computers
-- **Developer Identity**: My mindset and goals as a new web developer
-- **Learning Journey**: Why I joined this course and how I’m building my skills
+index.html – Homepage
 
-The site uses semantic tags such as `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, and inline tags like `<em>` and `<strong>`. One image is used with proper `alt` text and caption for accessibility.
+about.html – About Me page (adapted from W3.CSS CV template)
 
-## AI or Tool Usage
-Some content in this project was supported by ChatGPT to help brainstorm ideas, improve clarity, and structure my writing. All final edits were written and reviewed by me.
+contact.html – Contact form with table
 
-> `<meta name="description" content="This page includes content assisted by AI tools.">` has been included in the `<head>` section of the HTML file.
+success.html – Confirmation page after form submission
 
-## Overview
-This project enhances my homepage by adding optimized and meaningful images, along with a favicon for identity and branding.  
-Each image includes both a small (300px) and a large (1000px) version. Clicking a smaller image opens the larger version in a new browser tab.
+team.html – Flexbox-based team layout
 
-## Features Implemented
-- Three meaningful section images (About Me, Developer Identity, Learning Journey)
-- Each image uses a **small (300px)** and **large (1000px)** version
-- Clicking a small image opens the large version in a **new tab**
-- Images sized and aligned using **CSS flexbox**
-- Descriptive **alt text** and captions for accessibility
-- Favicon created and linked across all pages
-- HTML and CSS validated through **W3C Validator**
-- Accessibility checked using **WAVE tool**
+products.html – CSS Grid products showcase
 
-# Contact Us Page — Duy Nguyen
+css/ – Global and page-specific styles (style.css, layout.css, team.css, products.css)
 
-This project was created for the Launch Studio “HTML Forms and Tables” assignment.  
-It includes a professional **Contact Us** form and a **semantic data table**, both styled with CSS for clarity and accessibility.
+images/ – Avatar, logo, product images, section images, favicon
 
-## Features
-- Accessible HTML5 form using `<fieldset>`, `<legend>`, and labeled inputs  
-- Includes text, email, select menu, radio buttons, and checkboxes  
-- Table built with `<caption>`, `<thead>`, `<tbody>`, and proper `<th scope="col">` tags  
-- Fully validated with W3C HTML and CSS Validators  
-- Responsive layout styled in `css/style.css`
+README.md – Project summary and documentation
 
-# 
+-----------------------------
 
-## GitHub Pages (Live Site)
-(https://troliaochatgpt-sudo.github.io/webtools/)
+🎨 W3.CSS Usage
+
+I used the W3.CSS library to enhance visual consistency and accessibility across pages:
+
+Theme: w3-theme-blue-grey for unified color palette
+
+Components used:
+
+w3-container, w3-padding, w3-card, w3-round, w3-bar, w3-ul, w3-table, w3-image
+
+Styled elements:
+
+Contact form
+
+Class schedule table
+
+About page layout
+
+Header & footer spacing
+
+Team and products images using w3-image w3-round
+
+-----------------------------
+
+🧰 Technologies Used
+
+Semantic HTML5
+
+CSS design tokens
+
+Flexbox & Grid layouts
+
+W3.CSS components
+
+Favicon + responsive images
+
+Skip-link for accessibility
+
+GitHub + GitHub Pages
+
+-----------------------------
+
+📝 Template Adaptation (About Page)
+
+The About Page was built by adapting the W3.CSS CV Template.
+I customized:
+
+Header, nav, and footer to match the rest of my site
+
+Color styling to fit my palette
+
+Replaced placeholder photo with my own image
+
+Removed all personal address/phone
+
+Rewrote content to describe my goals, skills, and what I learned
+
+-----------------------------
+
+✔️ Validation & Accessibility
+
+HTML validated with W3C HTML Validator
+
+CSS validated with W3C CSS Validator
+
+Accessibility reviewed using WAVE Accessibility Checker
+
+Tested on desktop and mobile
+
+-----------------------------
+
+🤖 AI Usage Disclosure
+
+I used ChatGPT only for editing help, layout troubleshooting, and improving clarity.
+All final wording and design decisions were made by me.
+
+Meta tag included on all pages: 
+<meta name="description" content="This page includes content assisted by AI tools.">
+
+-----------------------------
+
+🌐 Live Site
+
+GitHub Pages:
+https://troliaochatgpt-sudo.github.io/webtools/
+
+GitHub Repo:
+https://github.com/troliaochatgpt-sudo/webtools
